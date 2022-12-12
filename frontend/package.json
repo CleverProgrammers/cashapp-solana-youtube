@@ -1,0 +1,33 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.0",
+    "@solana/pay": "^0.2.4",
+    "@solana/wallet-adapter-react": "^0.15.18",
+    "@solana/wallet-adapter-react-ui": "^0.9.16",
+    "@solana/wallet-adapter-wallets": "^0.18.9",
+    "date-fns": "^2.29.2",
+    "md5": "^2.3.0",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@heroicons/react": "^2.0.10",
+    "autoprefixer": "^10.4.8",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.8"
+  }
+}

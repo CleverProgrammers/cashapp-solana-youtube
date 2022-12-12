@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.phantom-button {
+    height: inherit !important;
+    padding: inherit !important;
+}
+
+.phantom-button:hover {
+    background-color: transparent !important;
+}
+
+.phantom-button:hover > .wallet-adapter-button-start-icon > svg,
+.phantom-button:hover > span {
+    color: rgb(243 244 246) !important;
+}
