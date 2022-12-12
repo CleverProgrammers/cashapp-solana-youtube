@@ -2,9 +2,9 @@ import { useState } from 'react'
 import Modal from '../Modal'
 import { useCashApp } from '../../hooks/cashapp.js'
 
-const NewTransactionModal = ({ modalOpen, setModalOpen, addTransaction }) => {
-    const { amount, setAmount } = useCashApp()
 
+const NewTransactionModal = ({ modalOpen, setModalOpen }) => {
+    const [amount, setAmount] = useState(0)
     const [receiver, setReceiver] = useState('')
     const [transactionPurpose, setTransactionPurpose] = useState('')
 
@@ -19,9 +19,12 @@ const NewTransactionModal = ({ modalOpen, setModalOpen, addTransaction }) => {
     }
 
     const onPay = async () => {
-        await addTransaction({ amount, receiver, transactionPurpose })
-        setAmount(0)
+        // Pay and add transaction funcationallity goes here!
 
+        // Clear states
+        setAmount(0)
+        setReceiver("")
+        setTransactionPurpose("")
     }
 
     return (

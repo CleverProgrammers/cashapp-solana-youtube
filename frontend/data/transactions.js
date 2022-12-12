@@ -2,18 +2,18 @@ export const transactions = [
     {
         id: '1',
         from: {
-            name: 'Yap Yee Qiang',
-            handle: 'yapyeeqiang',
-            avatar: 'https://yeeqiang.me/avatar.jpeg',
+            name: 'Lance Toledo',
+            handle: 'lancetoledo',
+            avatar: 'https://ca.slack-edge.com/T02AAEL0P-U02TV5RV2TW-g36efad6f5c1-512',
             verified: false,
         },
         to: {
-            name: 'Yap Yee Qiang',
-            handle: 'yapyeeqiang',
-            avatar: 'https://yeeqiang.me/avatar.jpeg',
+            name: 'Rafeh Qazi',
+            handle: 'rafeh.qazi',
+            avatar: 'https://ca.slack-edge.com/T02AAEL0P-U02TV5RV2TW-g36efad6f5c1-512',
             verified: true,
         },
-        description: 'Payment for Netflix project',
+        description: "Testing send functionality! 👋",
         transactionDate: new Date(),
         status: 'Completed',
         amount: 0.01,
@@ -23,9 +23,9 @@ export const transactions = [
     {
         id: '2',
         from: {
-            name: 'Yap Yee Qiang',
-            handle: 'yapyeeqiang',
-            avatar: 'https://yeeqiang.me/avatar.jpeg',
+            name: 'Lance Toledo',
+            handle: 'lancetoledo',
+            avatar: 'https://ca.slack-edge.com/T02AAEL0P-U02TV5RV2TW-g36efad6f5c1-512',
             verified: false,
         },
         to: {
@@ -34,7 +34,7 @@ export const transactions = [
             avatar: 'https://ca.slack-edge.com/T8JR01VL4-U02AQ23D15X-63795a2d421c-72',
             verified: false,
         },
-        description: 'Payment for Cash App project',
+        description: 'Payment for Cash App project 💸',
         transactionDate: new Date(),
         status: 'Incomplete',
         amount: 123.45,
@@ -44,9 +44,9 @@ export const transactions = [
     {
         id: '3',
         from: {
-            name: 'Yap Yee Qiang',
-            handle: 'yapyeeqiang',
-            avatar: 'https://yeeqiang.me/avatar.jpeg',
+            name: 'Lance Toledo',
+            handle: 'lancetoledo',
+            avatar: 'https://ca.slack-edge.com/T02AAEL0P-U02TV5RV2TW-g36efad6f5c1-512',
             verified: false,
         },
         to: {
@@ -55,7 +55,7 @@ export const transactions = [
             avatar: 'https://ca.slack-edge.com/T8JR01VL4-U01A8CULZ99-22c5b19dd0a7-72',
             verified: false,
         },
-        description: 'Payment for Airbnb project',
+        description: 'Payment for editing YouTube vids 🎞️',
         transactionDate: new Date(),
         status: 'Completed',
         amount: 999,

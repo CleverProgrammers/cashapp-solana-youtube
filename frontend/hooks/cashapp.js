@@ -28,17 +28,15 @@ export const useCashApp = () => {
     const { connection } = useConnection();
     const { connected, publicKey, sendTransaction } = useWallet()
 
-    const [avatar, setAvatar] = useState("")
-    const [userAddress, setUserAddress] = useState("11111111111111111111111111111111")
+
     const [amount, setAmount] = useState(0)
     // State for localStorage Array
     const [transactions, setTransactions] = useLocalStorage("transactions", []);
-    const [newTransactionModalOpen, setNewTransactionModalOpen] = useState(false)
+
 
     useEffect(() => {
         if (connected) {
             setAvatar(getAvatarUrl(publicKey.toString()))
-            setUserAddress(publicKey.toString())
         }
     }, [connected])
 
@@ -122,5 +120,5 @@ export const useCashApp = () => {
 
 
 
-    return { getAvatarUrl, avatar, userAddress, amount, setAmount, makeTransaction, doTransaction, transactions, setTransactions, newTransactionModalOpen, setNewTransactionModalOpen }
+    return { getAvatarUrl, amount, setAmount, makeTransaction, doTransaction, transactions, setTransactions }
 }
