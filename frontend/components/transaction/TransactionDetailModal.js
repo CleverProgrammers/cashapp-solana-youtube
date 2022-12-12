@@ -17,8 +17,6 @@ const TransactionDetailModal = ({ currentTransaction, modalOpen, setModalOpen })
                 <TransactionMetadata
                     metadata={{
                         amount: `${Number(currentTransaction?.amount).toFixed(2)} SOL`,
-                        // source: currentTransaction?.source,
-                        // identifier: currentTransaction?.identifier,
                         to: currentTransaction?.to.name,
                         from: currentTransaction?.from.name,
                     }}

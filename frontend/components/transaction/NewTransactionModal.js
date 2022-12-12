@@ -3,7 +3,7 @@ import Modal from '../Modal'
 import { useCashApp } from '../../hooks/cashapp.js'
 
 const NewTransactionModal = ({ modalOpen, setModalOpen, addTransaction }) => {
-    const {amount,setAmount} = useCashApp()
+    const { amount, setAmount } = useCashApp()
 
     const [receiver, setReceiver] = useState('')
     const [transactionPurpose, setTransactionPurpose] = useState('')
@@ -18,11 +18,10 @@ const NewTransactionModal = ({ modalOpen, setModalOpen, addTransaction }) => {
         input.style.width = newAmount.length + 'ch'
     }
 
-    const onPay =  async () => {
+    const onPay = async () => {
         await addTransaction({ amount, receiver, transactionPurpose })
         setAmount(0)
-        receiver = ""
-        transactionPurpose = ""
+
     }
 
     return (

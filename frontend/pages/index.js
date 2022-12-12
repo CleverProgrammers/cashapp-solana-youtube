@@ -19,34 +19,6 @@ const Home = () => {
 
     const { avatar, userAddress, doTransaction, transactions, setNewTransactionModalOpen, newTransactionModalOpen } = useCashApp()
 
-    const addTransaction = ({ amount, receiver, transactionPurpose }) => {
-        const newID = (transactions.length + 1).toString()
-        const newTransaction = {
-            id: newID,
-            from: {
-                name: 'Yap Yee Qiang',
-                handle: 'yapyeeqiang',
-                avatar: 'https://yeeqiang.me/avatar.jpeg',
-                verified: true,
-            },
-            to: {
-                name: receiver,
-                handle: '-',
-                avatar: 'https://yeeqiang.me/avatar.jpeg',
-                verified: false,
-            },
-            description: transactionPurpose,
-            transactionDate: new Date(),
-            status: 'Completed',
-            amount: amount,
-            source: '-',
-            identifier: '-',
-        };
-
-        setNewTransactionModalOpen(false);
-        setTransactions([newTransaction, ...transactions]);
-    }
-
     return (
         <div className="flex min-h-screen ">
             <header className="flex w-[250px] flex-col bg-[#0bb534] p-12">
