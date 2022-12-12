@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Modal from '../Modal'
-import { useCashApp } from '../../hooks/cashapp.js'
 
 
 const NewTransactionModal = ({ modalOpen, setModalOpen }) => {
